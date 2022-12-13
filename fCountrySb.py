@@ -3,9 +3,9 @@ try:
 except:
     print("wrong file path")
     file = input("Enter your file path:")
-    
-result=open(file,"w")
-with open("live_domain") as f:
+
+result=open("result.txt","w")
+with open(file) as f:
     for line in f:
         line=line.rstrip("\n")
         fltr=line.split("//")[1]
